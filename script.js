@@ -35,7 +35,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     alert('Please enter your name.');
     isValid = false;
   }
-  
+
 
   // Validation for email using regex
   if (!/\S+@\S+\.\S+/.test(email.value)) {
@@ -94,20 +94,20 @@ function changeColor(element) {
 
 
 function front() {
-    document.getElementById("front").style.display = "block";
-    document.getElementById("back").style.display = "none";
-    document.getElementById("frontt").classList.add("active-border");
-    document.getElementById("backk").classList.remove("active-border");
+  document.getElementById("front").style.display = "block";
+  document.getElementById("back").style.display = "none";
+  document.getElementById("frontt").classList.add("active-border");
+  document.getElementById("backk").classList.remove("active-border");
 }
 function back() {
-    document.getElementById("front").style.display = "none";
-    document.getElementById("back").style.display = "block";
-    document.getElementById("frontt").classList.remove("active-border");
-    document.getElementById("backk").classList.add("active-border");
+  document.getElementById("front").style.display = "none";
+  document.getElementById("back").style.display = "block";
+  document.getElementById("frontt").classList.remove("active-border");
+  document.getElementById("backk").classList.add("active-border");
 }
 
 // --------------scrollbar------------
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
   // Calculate the scroll progress
   let scrollTop = window.pageYOffset;
   let totalHeight = document.body.scrollHeight - window.innerHeight;
@@ -124,3 +124,42 @@ window.addEventListener('scroll', function() {
 //   let progress = (scr/fullheight) * 100;
 //   document.getElementById('top-bar').style.width = `${progress}`
 // })
+
+
+
+$('.himanshu').slick({
+  dots: true,
+  infinite: true,
+  autoslide: true,
+  speed: 2000,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
