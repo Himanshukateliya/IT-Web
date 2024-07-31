@@ -26,15 +26,19 @@
     --c2: rgba(168, 239, 255, 0.1);
     --c3: rgba(200, 194, 194, 1);
 }
-.clr{
-   color: var(--orange);
+
+.clr {
+    color: var(--orange);
 }
-html{
+
+html {
     overflow-x: hidden;
 }
-.bg-clr{
+
+.bg-clr {
     background-color: var(--c3);
 }
+
 /* ----------------------------------------------------------------------- header----------------------------------- */
 
 #top-bar {
@@ -144,7 +148,7 @@ html{
     background-size: cover;
 }
 
-.hvrrr{
+.hvrrr {
     background-image: url(./assets/banner-gradient\ 2.png);
     background-position: center center;
     background-size: cover;
@@ -166,7 +170,7 @@ html{
     /* position: relative; */
     transition: 0.5s ease-in;
     border: none;
-background: transparent;
+    background: transparent;
     /* top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); */
@@ -806,11 +810,13 @@ svg {
     background-size: contain;
     background-position: top -15rem right -1rem;
 }
-.img-wt{
+
+.img-wt {
     aspect-ratio: 3/2;
     width: 40%;
     object-fit: contain;
 }
+
 /* ----------------------------------why-choose us sec ------------------------ */
 @media (min-width:992px) {
     .lines {
@@ -1307,7 +1313,7 @@ svg {
 
 
 
-        /* @keyframes pulsate {
+/* @keyframes pulsate {
             0% {transform: scale(0.6, 0.6); opacity: 0.0;}
             50% {opacity: 1.0;}
             100% {transform: scale(1, 1); opacity: 0.0;}
@@ -1335,7 +1341,7 @@ svg {
 
          } */
 
-         /* @media (min-width:376px){
+/* @media (min-width:376px){
             .pulse-base:before {
                 padding: 24px;
                 position: absolute;
@@ -1398,11 +1404,13 @@ svg {
 .active-border {
     border-bottom: 4px solid rgb(255, 136, 0);
 }
-.icn-im{
+
+.icn-im {
     /* aspect-ratio: 3/2; */
     object-fit: contain;
     width: 18%;
 }
+
 /* ------------------------------------------- mobile-dev page--------------------------------------------------- */
 
 .line::after {
@@ -1483,9 +1491,20 @@ svg {
     left: 49%;
 } */
 
-.Blog-detail-sec{
+.Blog-detail-sec {
     margin-top: 4rem;
 }
-.contact-form h4{
+
+.contact-form h4 {
     font-size: 0.9rem;
+}
+
+
+
+/* extra */
+
+.asp {
+    aspect-ratio: 3/2;
+    width: 100%;
+    object-fit: contain;
 }
