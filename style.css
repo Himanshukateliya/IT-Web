@@ -29,7 +29,7 @@
 }
 
 .clr {
-    color: lightskyblue;
+    color: #009dfe;
 }
 
 html,
@@ -39,6 +39,10 @@ body {
 
 .bg-clr {
     background-color: var(--c4);
+}
+
+.bg-clr1 {
+    background-color: var(--c1);
 }
 
 /* ----------------------------------------------------------------------- header----------------------------------- */
@@ -1529,7 +1533,7 @@ svg {
 
 .line {
     height: 1145%;
-    width: 3px;
+    width: 1px;
     position: absolute;
     z-index: -1;
     content: "";
@@ -1636,4 +1640,80 @@ svg {
 .lines .line:nth-child(5)::after {
     -webkit-animation-delay: 8s;
     animation-delay: 8s;
+}
+
+.marquee {
+    margin: 0em 10px;
+}
+
+.marquee-box-one {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 3em 0 0 0;
+}
+
+.marquee-content-one {
+    display: flex;
+    gap: 40px;
+    padding: 0 20px;
+    animation: scroll-one 30s linear infinite;
+}
+
+.marquee-box-two {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 3em 0 6em 0;
+}
+
+.marquee-content-two {
+    display: flex;
+    gap: 40px;
+    padding: 0 20px;
+    animation: scroll-two 30s linear infinite;
+}
+
+.marquee-text {
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 100;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 15px 30px;
+    border: 1px solid grey;
+    border-radius: 50px;
+    color: white;
+    background-color: #272727;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.marquee-text:hover {
+    background-color: #31393F;
+    border: 1px solid #31393F;
+}
+
+@keyframes scroll-one {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-two {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
